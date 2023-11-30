@@ -184,7 +184,7 @@ rammap.exe -Et
 
 <img width="231" alt="" src="https://github.com/Dementiy/notes/assets/4396325/7a1c80b5-a206-474a-babc-3110ca2e321c">
 <img width="500" alt="" src="https://github.com/Dementiy/notes/assets/4396325/46ddd4e5-2bcb-423f-8a09-953559b239d9">
-
+<img width="500" alt="" src="https://github.com/Dementiy/presentations/assets/4396325/6a48051d-cd3b-40e2-8f5d-293271f9c955">
 
 # Numpy
 
