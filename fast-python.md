@@ -209,3 +209,9 @@ rammap.exe -Et
 - Есть интерфейс к CPython C API
 - Мы в мире С/С++ (указатели, ручное управление памятью и т.п.)
 - Отсутсвие инструментов (менеджер зависимостей, поддержка редакторами, поддержка статическими анализаторами)
+
+### Numba
+
+> Numba translates Python functions to optimized machine code at runtime using the industry-standard LLVM compiler library. Numba-compiled numerical algorithms in Python can approach the speeds of C or FORTRAN.
+
+<img width="500" alt="" src="https://github.com/Dementiy/presentations/assets/4396325/98d3361a-ce1f-43be-afe4-df6ea5d7d7d2">
