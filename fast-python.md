@@ -160,19 +160,6 @@ rammap.exe -Et
 }
 ```
 
-
-### CPU-Bound
-
-Пути решения:
- - использовать новые версии Python, где используется кеширование
- - использовать компиляцию на основе типов mypyc
- - векторизация вычислений
- - c/rust/go + биндинги
- - cffi
- - jit-компиляция
- - исопльзовать cython
-
-
 ### Выбор структуры данных
 
 <img width="300" alt="" src="https://github.com/Dementiy/notes/assets/4396325/dbdf1a04-0a95-488e-bd2a-ce9bae046d2f"><img width="300" alt="" src="https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/_images/KDtree.png">
