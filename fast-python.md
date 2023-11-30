@@ -1,11 +1,14 @@
 # Ускорение кода на Python
 
-### Что почитать?
+<img width="800" alt="" src="https://github.com/Dementiy/presentations/assets/4396325/1db9d566-f83f-4e78-a927-e163803aeb39">
 
+<!--
+# Что почитать?
 <img src="https://github.com/Dementiy/notes/assets/4396325/79fb949f-361e-44e1-83e4-8ac67d0a3d37" alt="image" width="300" height="auto">
 <img src="https://github.com/Dementiy/notes/assets/4396325/4ccb0c72-3b9f-46bb-a024-909e440e23a2" alt="image" width="300" height="auto">
+-->
 
-### Чего нет в докладе?
+# Чего нет в докладе?
 
 - Потоков и GIL
 - Процессов
@@ -13,11 +16,11 @@
 - Асинхронного программирования
 - Вычислений на GPU
 
-### Метрики и методологии
+# Метрики и методологии
 
 <img src="https://github.com/Dementiy/notes/assets/4396325/f480dd6a-8359-480f-80c4-1992f64962f9" alt="image" width="300" height="auto">
 
-### Тесты производительности
+# Тесты производительности
 
 Прежде чем начинать что-то оптимизировать надо написать бенчмарки (тесты производительности), например, с помощью [pytest-benchmark](https://github.com/ionelmc/pytest-benchmark).
 
@@ -50,7 +53,7 @@ def bench_np_dtw_v1(benchmark, xy):
     benchmark(np_dtw_path_v1, x=x, y=y)
 ```
 
-### Найти узкое место с помощью профилирования:
+# Найти узкое место с помощью профилирования:
 
  - [timeit](https://docs.python.org/3/library/timeit.html)
  - [cProfile](https://docs.python.org/3/library/profile.html) (pstats, snakeviz, ...)
@@ -60,7 +63,7 @@ def bench_np_dtw_v1(benchmark, xy):
  - [py-spy](https://github.com/benfred/py-spy)
  - ...
 
-### Определить к какому классу относится проблема:
+# Определить к какому классу относится проблема:
 
  - IO-Bound
    - Диск
@@ -72,24 +75,24 @@ def bench_np_dtw_v1(benchmark, xy):
    - Уперлись в производительность языка
    - ...
 
-### Хранение сейсмических данных
+# Хранение сейсмических данных
 
 <img src="https://github.com/Dementiy/notes/assets/4396325/3fa8c950-e5d5-42de-8fe1-a168f7863c2e" alt="image" width="500" height="auto">
 
-### Сейсмический куб
+# Сейсмический куб
 
 <img src="https://github.com/Dementiy/notes/assets/4396325/9b8e4c4d-bcfe-465a-8622-655a43f6220c" alt="image" width="500" height="auto">
 
-### SEGY
+# SEGY
 
 <img src="https://github.com/Dementiy/notes/assets/4396325/4a950bb0-8c5a-477e-866e-183495d44362" alt="image" width="500" height="auto">
 
-### Паттерны доступа к данным
+# Паттерны доступа к данным
 
 <img src="https://github.com/Dementiy/notes/assets/4396325/9b8e4c4d-bcfe-465a-8622-655a43f6220c" alt="image" width="500" height="auto">
 <img src="https://github.com/Dementiy/notes/assets/4396325/8e1217f1-789d-4065-b9f5-d8dea2c480b8" alt="image" width="500" height="auto">
 
-### [HDF5](https://github.com/h5py/h5py)
+# [HDF5](https://github.com/h5py/h5py)
 
 - Датасеты - многомерные массивы
 - Атрибуты - мета-данные (ключ-значение)
@@ -112,7 +115,7 @@ with h5py.File(path, mode="w") as h5file:
     ilines = h5file["Cube/ilines"][:3]
 ```
 
-### [Очистка кэша перед тестами](https://stackoverflow.com/questions/28845524/echo-3-proc-sys-vm-drop-caches-on-mac-osx)
+# [Очистка кэша перед тестами](https://stackoverflow.com/questions/28845524/echo-3-proc-sys-vm-drop-caches-on-mac-osx)
 
 ```sh
 # Linux
@@ -125,12 +128,12 @@ sync && sudo purge
 rammap.exe -Et
 ```
 
-### Бинарные форматы данных для передачи по сети
+# Бинарные форматы данных для передачи по сети
 
 <img src="https://github.com/Dementiy/notes/assets/4396325/d3e904c5-ecd7-49a1-be7d-3aa4a25c2f18" alt="image" width="500" height="auto">
 <img width="500" alt="" src="https://github.com/Dementiy/notes/assets/4396325/e0ffce79-5fcb-40d6-ae15-4e51fc5a7bc4">
 
-### [BSON](https://pypi.org/project/bson-py/)/[CBOR](https://github.com/agronholm/cbor2)
+# [BSON](https://pypi.org/project/bson-py/)/[CBOR](https://github.com/agronholm/cbor2)
 
 ```json
 {
@@ -160,16 +163,16 @@ rammap.exe -Et
 }
 ```
 
-### Выбор структуры данных
+# Выбор структуры данных
 
 <img width="300" alt="" src="https://github.com/Dementiy/notes/assets/4396325/dbdf1a04-0a95-488e-bd2a-ce9bae046d2f"><img width="300" alt="" src="https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/_images/KDtree.png">
 
-### Выбор алгоритма
+# Выбор алгоритма
 
 <img width="500" alt="" src="https://github.com/Dementiy/notes/assets/4396325/fee9481c-c0e1-4f8a-8478-3052b85332bb">
 <img width="500 " alt="" src="https://github.com/Dementiy/notes/assets/4396325/7ce0ddcc-fde9-4519-a8ee-e75b1388af3d">
 
-### Оптимизация работы с интерпретатором
+# Оптимизация работы с интерпретатором
 
 - Использование микро-оптимизаций
 - [PEP 659 – Specializing Adaptive Interpreter](https://peps.python.org/pep-0659/)
@@ -177,13 +180,13 @@ rammap.exe -Et
 - В [3.13](https://github.com/brandtbucher/cpython/tree/justin) будет JIT
 
 
-### Dynamic Time Warping
+# Dynamic Time Warping
 
 <img width="231" alt="" src="https://github.com/Dementiy/notes/assets/4396325/7a1c80b5-a206-474a-babc-3110ca2e321c">
 <img width="500" alt="" src="https://github.com/Dementiy/notes/assets/4396325/46ddd4e5-2bcb-423f-8a09-953559b239d9">
 
 
-### Numpy
+# Numpy
 
 - Компактное хранение массивов данных
 - Возможность использовать широкий диапазон типов
@@ -198,7 +201,7 @@ rammap.exe -Et
 <img width="500" alt="" src="https://github.com/Dementiy/notes/assets/4396325/133a1998-8306-4b2b-a84d-438fa6fe1e2d">
 
 
-### Cython
+# Cython
 
 > Cython is an optimising static compiler for both the Python programming language and the extended Cython programming language (based on Pyrex). It makes writing C extensions for Python as easy as Python itself.
 
@@ -210,7 +213,7 @@ rammap.exe -Et
 - Мы в мире С/С++ (указатели, ручное управление памятью и т.п.)
 - Отсутсвие инструментов (менеджер зависимостей, поддержка редакторами, поддержка статическими анализаторами)
 
-### Numba
+# Numba
 
 > Numba translates Python functions to optimized machine code at runtime using the industry-standard LLVM compiler library. Numba-compiled numerical algorithms in Python can approach the speeds of C or FORTRAN.
 
