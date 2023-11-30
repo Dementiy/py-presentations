@@ -1,6 +1,6 @@
 # Ускорение кода на Python
 
-<img width="800" alt="" src="https://github.com/Dementiy/presentations/assets/4396325/1db9d566-f83f-4e78-a927-e163803aeb39">
+<img width="500" alt="" src="https://github.com/Dementiy/presentations/assets/4396325/1db9d566-f83f-4e78-a927-e163803aeb39">
 
 <!--
 # Что почитать?
