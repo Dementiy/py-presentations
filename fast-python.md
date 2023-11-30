@@ -16,6 +16,8 @@
 - Асинхронного программирования
 - Вычислений на GPU
 
+<img width="500" alt="" src="https://github.com/Dementiy/presentations/assets/4396325/b0008a04-1cad-4024-a6c6-07e6b9a1563a">
+
 # Метрики и методологии
 
 <img src="https://github.com/Dementiy/notes/assets/4396325/f480dd6a-8359-480f-80c4-1992f64962f9" alt="image" width="300" height="auto">
