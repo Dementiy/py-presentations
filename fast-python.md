@@ -169,7 +169,12 @@ rammap.exe -Et
 <img width="500" alt="" src="https://github.com/Dementiy/notes/assets/4396325/fee9481c-c0e1-4f8a-8478-3052b85332bb">
 <img width="500 " alt="" src="https://github.com/Dementiy/notes/assets/4396325/7ce0ddcc-fde9-4519-a8ee-e75b1388af3d">
 
-### PEP 659 – Specializing Adaptive Interpreter
+### Оптимизация работы с интерпретатором
+
+- Использование микро-оптимизаций
+- [PEP 659 – Specializing Adaptive Interpreter](https://peps.python.org/pep-0659/)
+- [Динамическое генерирование байт-кода](http://webcache.googleusercontent.com/search?q=cache:DdYSe6ZU54kJ:https://medium.com/@yonatanzunger/advanced-python-achieving-high-performance-with-code-generation-796b177ec79&client=safari&sca_esv=580550388&hl=ru&gl=ru&strip=1&vwsrc=0)
+- В [3.13](https://github.com/brandtbucher/cpython/tree/justin) будет JIT
 
 
 ### Dynamic Time Warping
