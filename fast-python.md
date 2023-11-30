@@ -29,7 +29,7 @@ poetry add pytest-benchmark
 [tool.pytest.ini_options]
 python_files = ["test_*.py", "bench_*.py"]
 python_functions = ["test_*", "bench_*"]
-addopts = "--benchmark-skip --benchmark-columns=mean,rounds --benchmark-min-rounds=5 --tb=no"
+addopts = "--benchmark-skip --benchmark-columns=mean,rounds --benchmark-min-rounds=5"
 ```
 
 ```python
