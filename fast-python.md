@@ -207,7 +207,7 @@ rammap.exe -Et
 
 > Cython is an optimising static compiler for both the Python programming language and the extended Cython programming language (based on Pyrex). It makes writing C extensions for Python as easy as Python itself.
 
-<!-- <img width="500" alt="" src="https://github.com/Dementiy/notes/assets/4396325/2a98352b-fdc0-4cb3-859f-e6caf47e5378"> -->
+<img width="500" alt="" src="https://github.com/Dementiy/notes/assets/4396325/2a98352b-fdc0-4cb3-859f-e6caf47e5378">
 
 
 - Высокая скорость
@@ -215,7 +215,7 @@ rammap.exe -Et
 - Мы в мире С/С++ (указатели, ручное управление памятью и т.п.)
 - Отсутсвие инструментов (менеджер зависимостей, поддержка редакторами, поддержка статическими анализаторами)
 
-<img width="500" alt="" src="https://nin-jin.github.io/slides/fibers/react-only.gif">
+<!-- <img width="500" alt="" src="https://nin-jin.github.io/slides/fibers/react-only.gif"> -->
 
 # Numba
 
