@@ -215,8 +215,19 @@ rammap.exe -Et
 - Мы в мире С/С++ (указатели, ручное управление памятью и т.п.)
 - Отсутсвие инструментов (менеджер зависимостей, поддержка редакторами, поддержка статическими анализаторами)
 
+<img width="500" alt="" src="https://nin-jin.github.io/slides/fibers/react-only.gif">
+
 # Numba
 
 > Numba translates Python functions to optimized machine code at runtime using the industry-standard LLVM compiler library. Numba-compiled numerical algorithms in Python can approach the speeds of C or FORTRAN.
 
 <img width="500" alt="" src="https://github.com/Dementiy/presentations/assets/4396325/98d3361a-ce1f-43be-afe4-df6ea5d7d7d2">
+
+# [Есть что добавить или поправить?](https://github.com/nin-jin/slides/blob/master/ui-kit/readme.md#есть-что-добавить-или-поправить)
+
+![](https://habrastorage.org/webt/y3/gb/is/y3gbisydqnoyr5qwwmscn0gwmqq.gif)
+
+- Дмитрий, как обычно, разобрал все по-полочкам. Мне очень понравился получившиеся подходы и техники. Хорошая визуализация. Из минусов подачи - слишком сухо что-ли. Дмитрий сразу прыгает с места в карьер. Но наверное если бы обьяснял, то контента было бы раза в 2 меньше.
+- К сожалению уснул на второй половине. Хотелось бы рассказ пободрее. Не увлекает.
+- Пожалуйста, хоть чуть-чуть привлекайте дизайнеров для создания презентаций, очень тяжело смотреть потому что банально ничего не видно. Ну и немножечко нудно... Хотя тема и правда важная.
+- Вот это обязательно посмотрю.
