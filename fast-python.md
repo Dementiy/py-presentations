@@ -55,9 +55,9 @@ def bench_np_dtw_v1(benchmark, xy):
  - [timeit](https://docs.python.org/3/library/timeit.html)
  - [cProfile](https://docs.python.org/3/library/profile.html) (pstats, snakeviz, ...)
  - [line_profiler](https://github.com/pyutils/line_profiler) (`LINE_PROFILE=1`)
- - [py-spy](https://github.com/benfred/py-spy)
  - [tracemalloc](https://docs.python.org/3/library/tracemalloc.html)
  - [memory_profiler](https://github.com/pythonprofilers/memory_profiler)
+ - [py-spy](https://github.com/benfred/py-spy)
  - ...
 
 ### Определить к какому классу относится проблема:
