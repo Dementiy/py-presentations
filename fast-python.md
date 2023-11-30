@@ -29,23 +29,25 @@ poetry add pytest-benchmark
 [tool.pytest.ini_options]
 python_files = ["test_*.py", "bench_*.py"]
 python_functions = ["test_*", "bench_*"]
-addopts = "--benchmark-skip"
+addopts = "--benchmark-skip --benchmark-columns=mean,rounds --benchmark-min-rounds=5 --tb=no"
 ```
 
 ```python
-# bench_profile_intersections.py
-@pytest.mark.benchmark(group="profile-intersections")
-def bench_brute_force(benchmark):
-    ...
+# bench_dtw.py
+@pytest.mark.benchmark(group="DTW benchmarks")
+def bench_py_dtw(benchmark, xy):
+    x, y = xy
+    benchmark(py_dtw_path, x=x.tolist(), y=y.tolist())
 
-@pytest.mark.benchmark(group="profile-intersections")
-def bench_binary_search(benchmark):
-    ...
+@pytest.mark.benchmark(group="DTW benchmarks")
+def bench_mypyc_dtw(benchmark, xy):
+    x, y = xy
+    benchmark(mypyc_dtw_path, x=x.tolist(), y=y.tolist())
 
-
-@pytest.mark.benchmark(group="profile-intersections")
-def bench_bentley_ottmann(benchmark):
-    ...
+@pytest.mark.benchmark(group="DTW benchmarks")
+def bench_np_dtw_v1(benchmark, xy):
+    x, y = xy
+    benchmark(np_dtw_path_v1, x=x, y=y)
 ```
 
 ### Найти узкое место с помощью профилирования:
