@@ -186,9 +186,9 @@ rammap.exe -Et
 - Векторизация вычислений
 - Использование универсальных функций (ufuncs)
 - Buffer protocol
-- __array_...
 - memoryview
 - np.shares_memory
+- ...
 
 <img width="500" alt="" src="https://github.com/Dementiy/notes/assets/4396325/133a1998-8306-4b2b-a84d-438fa6fe1e2d">
 
