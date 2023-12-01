@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "pyspeed"
+version = "0.1.0"
+description = ""
+authors = ["Dmitrii Sorokin"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.2"
+pytest = "^7.4.3"
+pytest-benchmark = "^4.0.0"
+black = "^23.11.0"
+pylint = "^3.0.2"
+mypy = "^1.7.1"
+line-profiler = "^4.1.2"
+cython = "^3.0.6"
+numba = "^0.58.1"
+maturin = "^1.3.2"
+pytest-subtests = "^0.11.0"
+
+[build-system]
+requires = ["maturin>=1.3,<2.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+
+[tool.pytest.ini_options]
+python_files = ["test_*.py", "bench_*.py"]
+python_functions = ["test_*", "bench_*"]
+addopts = "--benchmark-columns=mean,rounds --benchmark-min-rounds=5 --tb=no"
