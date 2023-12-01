@@ -223,6 +223,7 @@ rammap.exe -Et
 
 <img width="500" alt="" src="https://github.com/Dementiy/presentations/assets/4396325/98d3361a-ce1f-43be-afe4-df6ea5d7d7d2">
 
+<!--
 # [Есть что добавить или поправить?](https://github.com/nin-jin/slides/blob/master/ui-kit/readme.md#есть-что-добавить-или-поправить)
 
 ![](https://habrastorage.org/webt/y3/gb/is/y3gbisydqnoyr5qwwmscn0gwmqq.gif)
@@ -231,3 +232,4 @@ rammap.exe -Et
 - К сожалению уснул на второй половине. Хотелось бы рассказ пободрее. Не увлекает.
 - Пожалуйста, хоть чуть-чуть привлекайте дизайнеров для создания презентаций, очень тяжело смотреть потому что банально ничего не видно. Ну и немножечко нудно... Хотя тема и правда важная.
 - Вот это обязательно посмотрю.
+-->
