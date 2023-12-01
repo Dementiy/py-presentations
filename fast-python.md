@@ -166,8 +166,8 @@ rammap.exe -Et
 ```
 
 # Выбор структуры данных
+<img width="350" alt="" src="https://github.com/Dementiy/presentations/assets/4396325/a551b86d-5f89-4216-b7c3-6613bde49280"><img width="500" alt="" src="https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/_images/KDtree.png">
 
-<img width="300" alt="" src="https://github.com/Dementiy/notes/assets/4396325/dbdf1a04-0a95-488e-bd2a-ce9bae046d2f"><img width="300" alt="" src="https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/_images/KDtree.png">
 
 # Выбор алгоритма
 
