@@ -15,6 +15,7 @@
 - Распределенных (грид) вычислений (dispy / dask / ray и т.п.)
 - Асинхронного программирования
 - Вычислений на GPU
+- ...
 
 <img width="500" alt="" src="https://github.com/Dementiy/presentations/assets/4396325/b0008a04-1cad-4024-a6c6-07e6b9a1563a">
 
