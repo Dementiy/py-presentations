@@ -55,7 +55,7 @@ def bench_np_dtw_v1(benchmark, xy):
     benchmark(np_dtw_path_v1, x=x, y=y)
 ```
 
-# Найти узкое место с помощью профилирования:
+# Инструменты профилирования
 
  - [timeit](https://docs.python.org/3/library/timeit.html)
  - [cProfile](https://docs.python.org/3/library/profile.html) (pstats, snakeviz, ...)
@@ -65,7 +65,7 @@ def bench_np_dtw_v1(benchmark, xy):
  - [py-spy](https://github.com/benfred/py-spy)
  - ...
 
-# Определить к какому классу относится проблема:
+# Классы проблем
 
  - IO-Bound
    - Диск
