@@ -91,23 +91,24 @@ fn warping_path(d: Array2<f32>) -> Array2<u32> {
     path.slice(s![..k+1;-1,..]).mapv(|x| x as u32).to_owned()
 }
 
-#[pymodule]
-fn rudtw<'py>(_py: Python<'py>, m: &'py PyModule) -> PyResult<()> {
-    // m.add_function(wrap_pyfunction!(dtw_path, m)?)?;
-    #[pyfn(m)]
-    #[pyo3(name = "dtw_path")]
-    fn dtw_path<'py>(
-        py: Python<'py>,
-        x: PyReadonlyArray1<f32>,
-        y: PyReadonlyArray1<f32>,
-    ) -> &'py PyArray2<u32> {
-        let xx = x.as_array();
-        let yy = y.as_array();
-        let cost = cost_matrix(xx, yy);
-        let d = accumulated_cost_matrix(cost);
-        let path = warping_path(d);
-        path.into_pyarray(py)
-    }
 
+#[pyfunction]
+fn dtw_path<'py>(
+    py: Python<'py>,
+    x: PyReadonlyArray1<f32>,
+    y: PyReadonlyArray1<f32>,
+) -> Bound<'py, PyArray2<u32>> {
+    let xx = x.as_array();
+    let yy = y.as_array();
+    let cost = cost_matrix(xx, yy);
+    let d = accumulated_cost_matrix(cost);
+    let path = warping_path(d);
+    path.into_pyarray(py)
+}
+
+
+#[pymodule]
+fn rudtw(_py: Python<'_>, m: &Bound<'_, PyModule>) -> PyResult<()> {
+    m.add_function(wrap_pyfunction!(dtw_path, m)?)?;
     Ok(())
 }
