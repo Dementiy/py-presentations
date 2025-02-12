@@ -9,6 +9,6 @@ name = "rudtw"
 crate-type = ["cdylib"]
 
 [dependencies]
-ndarray = "0.15.6"
-numpy = "0.19"
-pyo3 = "0.19.0"
+ndarray = "0.16.1"
+numpy = "0.23.0"
+pyo3 = "0.23.1"
